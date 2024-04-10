@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dashboard</title>
+    
+    <script src="../path/to/chartjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+    
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="./output.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+ 
+  </head>
+      <body>
+         <header class="bg-gradient-to-tr from-sky-400 to-teal-100 w-full h-20 flex justify-between self-center ">
+            <div class="flex  justify-start self-center">
+            <img src="gurukul.png" class="w-16 h-16 rounded-full ml-1"/>
+            <h1 class="font-serif text-2xl self-center ml-6 ">GURUKUL ERP</h1></div>
+
+            <div class="flex justify-around self-center">
+             <div class="mt-1 mr-1"><span class="font-bold text-xs">Nandini Sharma</span></div>
+             <div>
+              <img
+  src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-dashboard/assets/img/drake.jpg"
+  alt="avatar image"
+  class="inline-flex items-center justify-center w-10 h-10 mr-2  text-white transition-all duration-200 ease-in-out text-sm rounded-xl"
+/>
+              </div>
+              </div>
+            </header>
+          
+            <div class="flex  justify-center mt-5 ">
+            
+<form class="flex items-center max-w-lg mx-auto">   
+  <label for="voice-search" class="sr-only">Search</label>
+  <div class="relative w-full">
+      <div class="absolute inset-y-0 start-0 flex items-center ps-3 pointer-events-none">
+          <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 21 21">
+              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.15 5.6h.01m3.337 1.913h.01m-6.979 0h.01M5.541 11h.01M15 15h2.706a1.957 1.957 0 0 0 1.883-1.325A9 9 0 1 0 2.043 11.89 9.1 9.1 0 0 0 7.2 19.1a8.62 8.62 0 0 0 3.769.9A2.013 2.013 0 0 0 13 18v-.857A2.034 2.034 0 0 1 15 15Z"/>
+          </svg>
+      </div>
+      <input type="text" id="voice-search" class= "bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full ps-10 p-2.5  dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Search"  />
+      <button type="button" class="absolute inset-y-0 end-0 flex items-center pe-3">
+
+      </button>
+  </div>
+  <button type="submit" class="inline-flex items-center py-2.5 px-3 ms-2 text-sm font-medium text-white bg-blue-700 rounded-lg border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">
+      <svg class="w-4 h-4 me-2" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"/>
+      </svg>Search
+  </button>
+</form>
+    </div>
+
+    <main class="flex self-center w-full mt-4">
+      
+<div class="w-72 bg-gradient-to-tr from-sky-300 to-teal-200 ml-2 rounded-xl h-full">
+<aside>
+ <a href="index.html"><div class=" flex justify-center self-center mt-4"> <span class="block  text-lg"><i class="fa fa-home mr-2" style="font-size:24px"></i> Dashboard</span></div></a>
+ <div class=" flex justify-center self-center mt-10"><span class="block  text-lg"><i class="fa fa-eye mr-3" aria-hidden="true" style="font-size:24px"></i>Admissions</span></div>
+ <div class=" flex justify-center self-center mt-10"> <span class="block text-lg"><i class="fa fa-user mr-4" aria-hidden="true" style="font-size:24px"></i>Students</span></div>
+  <div class=" flex justify-center self-center mt-10"><span class="block text-lg"><i class="fa fa-credit-card mr-3" aria-hidden="true" style="font-size:24px"></i>Payments</span></div>
+  <div class=" flex justify-center self-center mt-10"> <span class="block text-lg"><i class="fa fa-clock-o mr-3" aria-hidden="true" style="font-size:24px"></i>Time Table</span></div>
+  <div class=" flex justify-center self-center mt-10"> <span class="block text-lg"><i class="fa fa-question mr-4" aria-hidden="true" style="font-size:24px"></i>Quiz</span></div>
+  <a href="result.html"><div class=" flex justify-center self-center mt-10"> <span class="block text-lg"><i class="fa fa-list-alt mr-3" aria-hidden="true" style="font-size:24px"></i>Results</span></div></a>
+  <div class=" flex justify-center self-center mt-10"> <span class="block text-lg"><i class="fa fa-bookmark mr-3" aria-hidden="true" style="font-size:24px"></i>Departments</span></div>
+  <div class=" flex justify-center self-center mt-10"><span class="block text-lg"><i class="fa fa-bell mr-3" aria-hidden="true" style="font-size:24px"></i>Notifications</span></div>
+  <div class=" flex justify-center self-center mt-10 mb-4"> <span class="block text-lg"><i class="fa fa-cog mr-3" aria-hidden="true" style="font-size:24px"></i>Settings</span></div>
+  </aside>
+  </div>
+  <div class="bg-slate-100 ml-5 rounded-xl w-full">
+    <section class="w-full h-full">
+    <h1 class=" mt-2 text-2xl font-sans font-bold text-zinc-700 underline flex justify-center self-center ">Dashboard</h1>
+ <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 lg:gap-10 lg:ml-10 md:gap-10 gap-5 mt-3 md:mt-5 lg:mt-5">
+ <div class="bg-red-200 lg:w-60 lg:h-48 md:w-20 md:h-16 rounded-lg hover:scale-105 hover:shadow-xl">
+ <div class="flex justify-center self-center mt-5"> <i class="fa fa-user mr-4" aria-hidden="true" style="font-size:38px;"></i></div>
+  <p class="text-2xl font-bold text-center mt-2">Students</p>
+<p class="text-center text-sm">Number of students enrolled</p>
+<p class="text-center font-bold text-2xl mt-3">380</p>
+</div>
+
+  <div class="bg-orange-200 lg:w-60 lg:h-48 md:w-20 md:h-16 rounded-lg hover:scale-105 hover:shadow-xl">
+    <div class="flex justify-center self-center mt-5"> <i class="fa fa-random" aria-hidden="true" style="font-size:38px;"></i></div>
+    <p class="text-2xl font-bold text-center mt-2">Faculties</p>
+    <p class="text-center text-sm">Number of faculty Members</p>
+<p class="text-center font-bold text-2xl mt-3">25</p> 
+  </div>
+
+  <div class="bg-yellow-200 lg:w-60 lg:h-48 md:w-20 md:h-16 rounded-lg hover:scale-105 hover:shadow-xl">
+    <div class="flex justify-center self-center mt-5"> <i class="fa fa-credit-card mr-3" aria-hidden="true" style="font-size:38px"></i></div>
+  <p class="text-2xl font-bold text-center mt-2">Fees Collected</p>
+<p class="text-center text-sm">Total Amount of Fees Collected</p>
+<p class="text-center font-bold text-2xl mt-3">Rs1,12,000</p>
+  </div>
+
+  <div class="bg-cyan-300 lg:w-60 lg:h-48 md:w-20 md:h-16 rounded-lg hover:scale-105 hover:shadow-xl">
+    <div class="flex justify-center self-center mt-5"> <i class="fa fa-eye mr-3" aria-hidden="true" style="font-size:38px"></i></div>
+  <p class="text-2xl font-bold text-center mt-2">Admissions</p>
+<p class="text-center text-sm">Number of Admissions past week</p>
+<p class="text-center font-bold text-2xl mt-3">35</p>
+  </div>
+
+  <div class="bg-indigo-300 lg:w-60 lg:h-48 md:w-20 md:h-16 rounded-lg hover:scale-105 hover:shadow-xl">
+    <div class="flex justify-center self-center mt-5"> <i class="fa fa-bookmark mr-3" aria-hidden="true" style="font-size:38px"></i></div>
+  <p class="text-2xl font-bold text-center mt-2">Departments</p>
+<p class="text-center text-sm">Number of Academic Departments</p>
+<p class="text-center font-bold text-2xl mt-2">4</p>
+  </div>
+
+  <div class="bg-green-300 lg:w-60 lg:h-48 md:w-20 md:h-16 rounded-lg hover:scale-105 hover:shadow-xl">
+    <div class="flex justify-center self-center mt-5"> <i class="fa fa-bell mr-3" aria-hidden="true" style="font-size:38px"></i></div>
+  <p class="text-2xl font-bold text-center mt-2">Notification</p>
+<p class="text-center text-sm">Number of Unread Notifications</p>
+<p class="text-center font-bold text-2xl mt-3">38</p>
+  </div>
+
+  </div>
+</section>
+ 
+  </div>
+</main>
+
+      </body>
+</html>

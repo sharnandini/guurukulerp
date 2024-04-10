@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dashboard</title>
+    
+    <script src="../path/to/chartjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+    
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="./output.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+ 
+  </head>
+      <body>
+         <header class="bg-gradient-to-tr from-sky-400 to-teal-100 w-full h-20 flex justify-between self-center ">
+            <div class="flex  justify-start self-center">
+            <img src="gurukul.png" class="w-16 h-16 rounded-full ml-1"/>
+            <h1 class="font-serif text-2xl self-center ml-6 ">GURUKUL ERP</h1></div>
+
+            <div class="flex justify-around self-center">
+             <div class="mt-1 mr-1"><span class="font-bold text-xs">Nandini Sharma</span></div>
+             <div>
+              <img
+  src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-dashboard/assets/img/drake.jpg"
+  alt="avatar image"
+  class="inline-flex items-center justify-center w-10 h-10 mr-2  text-white transition-all duration-200 ease-in-out text-sm rounded-xl"
+/>
+              </div>
+              </div>
+            </header>
+            
+            
+        <main class="flex mt-4">
+         
+          <div class="w-72 bg-gradient-to-tr from-sky-300 to-teal-200 ml-2 rounded-xl h-full">
+          
+          <aside>
+            <a href="index.html"><div class=" flex justify-center self-center mt-4"> <span class="block  text-lg"><i class="fa fa-home mr-2" style="font-size:24px"></i> Dashboard</span></div></a>
+            <div class=" flex justify-center self-center mt-10"><span class="block  text-lg"><i class="fa fa-eye mr-3" aria-hidden="true" style="font-size:24px"></i>Admissions</span></div>
+            <div class=" flex justify-center self-center mt-10"> <span class="block text-lg"><i class="fa fa-user mr-4" aria-hidden="true" style="font-size:24px"></i>Students</span></div>
+             <div class=" flex justify-center self-center mt-10"><span class="block text-lg"><i class="fa fa-credit-card mr-3" aria-hidden="true" style="font-size:24px"></i>Payments</span></div>
+             <div class=" flex justify-center self-center mt-10"> <span class="block text-lg"><i class="fa fa-clock-o mr-3" aria-hidden="true" style="font-size:24px"></i>Time Table</span></div>
+             <div class=" flex justify-center self-center mt-10"> <span class="block text-lg"><i class="fa fa-question mr-4" aria-hidden="true" style="font-size:24px"></i>Quiz</span></div>
+             <a href="result.html"></a><div class=" flex justify-center self-center mt-10"> <span class="block text-lg"><i class="fa fa-list-alt mr-3" aria-hidden="true" style="font-size:24px"></i>Results</span></div></a>
+             <div class=" flex justify-center self-center mt-10"> <span class="block text-lg"><i class="fa fa-bookmark mr-3" aria-hidden="true" style="font-size:24px"></i>Departments</span></div>
+             <div class=" flex justify-center self-center mt-10"><span class="block text-lg"><i class="fa fa-bell mr-3" aria-hidden="true" style="font-size:24px"></i>Notifications</span></div>
+             <div class=" flex justify-center self-center mt-10 mb-4"> <span class="block text-lg"><i class="fa fa-cog mr-3" aria-hidden="true" style="font-size:24px"></i>Settings</span></div>
+             </aside>
+             </div>
+
+             <div class="ml-4 w-full">
+   <div class="bg-pink-400 w-full flex justify-around ">
+    <div><a href="result.html">Result Data</a></div>
+    <div><a href="res1.html">View Result</a></div>
+    <div><a href="res2.html">Result Designer</a></div>
+    <div><a href="res3.html">Resullt Analyzer</a></div>
+  </div>
+  <h1 class="mt-10 flex justify-center self-center font-sans font-bold text-zinc-700 underline text-2xl">Design 2</h1>
+  
+    <div class="flex justify-around self-center mt-8">
+        <div class="w-auto h-auto p-5 border-2 m-3 border-gray-500 rounded-2xl bg-gradient-to-tr from-indigo-400  to-rose-300 hover:scale-105" >
+          <h6 class="flex justify-center self-center text-2xl h-6 text-black">Examination Result 2024</h6>
+                <h6 class="flex justify-center text-1xl mt-5 py-0 text-black font-bold">CANDIDATE DETAILS</h6>
+              <div class="mr-40 mb-10 mt-5 flex justify-center self-center">
+                <div class="font-semibold">
+                  <h6>Name</h6>
+                  <h6>Roll No.</h6>
+                  <h6>Course</h6>
+                  <h6>Branch</h6>
+                  <h6>Semester</h6>
+                  <h6>Status</h6>
+                </div>
+                <div class="ml-5">
+                  <h6>NANDINI SHARMA</h6>
+                  <h6>0823CS221052</h6>
+                  <h6>B.Tech</h6>
+                  <h6>CS</h6>
+                  <h6>3</h6>
+                  <h6>Regular</h6>
+                </div>
+              </div>
+              <div class="w-full flex justify-center self-center  mb-10">
+                <table class="border" border="1">
+                  <thead class="border border-black bg-gradient-to-tr from-indigo-400  to-rose-300 ">
+                    <tr>
+                      <th class="p-3">Subject</th>
+                      <th class="p-3">Total Credit</th>
+                      <th class="p-3">Earned Credit</th>
+                      <th class="p-3">Grade</th>
+                    </tr>
+                  </thead>
+                  <tbody class="border border-black bg-gradient-to-tr from-indigo-400  to-rose-300 ">
+                    <tr class="border border-black">
+                      <td class="p-3">BT 201- [T]</td>
+                      <td class="pl-12">3</td>
+                      <td class="pl-12">3</td>
+                      <td class="pl-8">B</td>
+                    </tr>
+                    <tr class="border  border-black">
+                      <td class="p-3">BT 201- [T]</td>
+                      <td class="pl-12">3</td>
+                      <td class="pl-12">3</td>
+                      <td class="pl-8">B</td>
+                    </tr>
+                    <tr class="border  border-black">
+                      <td class="p-3">BT 201- [T]</td>
+                      <td class="pl-12">3</td>
+                      <td class="pl-12">3</td>
+                      <td class="pl-8">B</td>
+                    </tr>
+                    <tr class="border  border-black">
+                      <td class="p-3">BT 201- [T]</td>
+                      <td class="pl-12">3</td>
+                      <td class="pl-12">3</td>
+                      <td class="pl-8">B</td>
+                    </tr>
+                    <tr class="border  border-black">
+                      <td class="p-3">BT 201- [T]</td>
+                      <td class="pl-12">3</td>
+                      <td class="pl-12">3</td>
+                      <td class="pl-8">B</td>
+                    </tr>
+                    <tr class="border  border-black">
+                      <td class="p-3">BT 201- [T]</td>
+                      <td class="pl-12">3</td>
+                      <td class="pl-12">3</td>
+                      <td class="pl-8">B</td>
+                    </tr>
+                  </tbody>
+                </table>
+               
+              </div>
+              <div class="w-full">
+                <table class="border table-auto" border="1">
+                  <thead class="border border-black bg-gradient-to-tr from-indigo-400  to-rose-300 ">
+                    <tr>
+                      <th class="p-3">Result Des.</th>
+                      <th class="p-3 pl-36">SGPA</th>
+                      <th class="p-3 pl-14">CGPA</th>
+                     </tr>
+                  </thead>
+                  <tbody class="border border-black bg-gradient-to-tr from-indigo-400  to-rose-300 ">
+                    <tr class="border border-black">
+                      <td class="pl-6">PASS</td>
+                      <td class=" pl-36">7.48</td>
+                      <td class="pl-16">7.84</td>
+                      </tr>
+                  </tbody>
+                </table>
+                </div>   
+        </div>
+       
+</main>
+
+      </body>
+</html>

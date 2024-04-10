@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Dashboard</title>
+    
+    <script src="../path/to/chartjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+              }
+            }
+          }
+        }
+      </script>
+
+    
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link href="./output.css" rel="stylesheet">
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+   
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.0.0/css/font-awesome.css" integrity="sha512-72McA95q/YhjwmWFMGe8RI3aZIMCTJWPBbV8iQY3jy1z9+bi6+jHnERuNrDPo/WGYEzzNs4WdHNyyEr/yXJ9pA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+ 
+  </head>
+      <body>
+         <header class="bg-gradient-to-tr from-sky-400 to-teal-100 w-full h-20 flex justify-between self-center ">
+            <div class="flex  justify-start self-center">
+            <img src="gurukul.png" class="w-16 h-16 rounded-full ml-1"/>
+            <h1 class="font-serif text-2xl self-center ml-6 ">GURUKUL ERP</h1></div>
+
+            <div class="flex justify-around self-center">
+             <div class="mt-1 mr-1"><span class="font-bold text-xs">Nandini Sharma</span></div>
+             <div>
+              <img
+  src="https://raw.githubusercontent.com/creativetimofficial/public-assets/master/soft-ui-dashboard/assets/img/drake.jpg"
+  alt="avatar image"
+  class="inline-flex items-center justify-center w-10 h-10 mr-2  text-white transition-all duration-200 ease-in-out text-sm rounded-xl"
+/>
+              </div>
+              </div>
+            </header>
+            
+            
+        <main class="flex mt-4">
+         
+          <div class="w-72 bg-gradient-to-tr from-sky-300 to-teal-200 ml-2 rounded-xl h-full">
+          
+          <aside>
+            <a href="index.html"><div class=" flex justify-center self-center mt-4"> <span class="block  text-lg"><i class="fa fa-home mr-2" style="font-size:24px"></i> Dashboard</span></div></a>
+            <div class=" flex justify-center self-center mt-10"><span class="block  text-lg"><i class="fa fa-eye mr-3" aria-hidden="true" style="font-size:24px"></i>Admissions</span></div>
+            <div class=" flex justify-center self-center mt-10"> <span class="block text-lg"><i class="fa fa-user mr-4" aria-hidden="true" style="font-size:24px"></i>Students</span></div>
+             <div class=" flex justify-center self-center mt-10"><span class="block text-lg"><i class="fa fa-credit-card mr-3" aria-hidden="true" style="font-size:24px"></i>Payments</span></div>
+             <div class=" flex justify-center self-center mt-10"> <span class="block text-lg"><i class="fa fa-clock-o mr-3" aria-hidden="true" style="font-size:24px"></i>Time Table</span></div>
+             <div class=" flex justify-center self-center mt-10"> <span class="block text-lg"><i class="fa fa-question mr-4" aria-hidden="true" style="font-size:24px"></i>Quiz</span></div>
+             <a href="result.html"><div class=" flex justify-center self-center mt-10"> <span class="block text-lg"><i class="fa fa-list-alt mr-3" aria-hidden="true" style="font-size:24px"></i>Results</span></div></a>
+             <div class=" flex justify-center self-center mt-10"> <span class="block text-lg"><i class="fa fa-bookmark mr-3" aria-hidden="true" style="font-size:24px"></i>Departments</span></div>
+             <div class=" flex justify-center self-center mt-10"><span class="block text-lg"><i class="fa fa-bell mr-3" aria-hidden="true" style="font-size:24px"></i>Notifications</span></div>
+             <div class=" flex justify-center self-center mt-10 mb-4"> <span class="block text-lg"><i class="fa fa-cog mr-3" aria-hidden="true" style="font-size:24px"></i>Settings</span></div>
+             </aside>
+             </div>
+
+             <div class="ml-4 w-full">
+   
+  <div class="bg-pink-400 w-full flex justify-around ">
+    <div><a href="result.html">Result Data</a></div>
+    <div><a href="res1.html">View Result</a></div>
+    <div><a href="res2.html">Result Designer</a></div>
+    <div><a href="res3.html">Resullt Analyzer</a></div>
+  </div>
+  <h1 class="mt-10 flex justify-center self-center font-sans font-bold text-zinc-700 underline text-2xl">Result Analyzer</h1>
+  <div class="flex justify-around mt-8">
+   <div class="w-auto h-7 border-2 border-black">
+    <form action="">
+      Class  <select name="Year">
+        <option></option>
+        <option>1st sem</option>
+        <option>2nd sem</option>
+        <option>3rd sem</option>
+        <option>4th sem</option>
+        <option>5th sem</option>
+        <option>6th sem</option>
+        <option>7th sem</option>
+        <option>8th sem</option>
+      </select>
+    </form>
+  </div>
+  <div class="w-auto h-7 border-2 border-black">
+    <form action="">
+      Time  <select name="Year">
+        <option></option>
+        <option>2021 to 2023</option>
+        <option>2021 to 2023</option>
+        <option>2021 to 2023</option>
+        <option>2021 to 2023</option>
+        <option>2021 to 2023</option>
+        <option>2021 to 2023</option>
+        <option>2021 to 2023</option>
+        <option>2021 to 2023</option>
+      </select>
+    </form>
+  </div>
+</div> 
+<div class="flex justify-evenly mt-5 py-8">
+    <div class="bg-green-300 lg:w-44 lg:h-40 md:w-20 md:h-16 rounded-lg hover:scale-105 hover:shadow-xl">
+         <p class="text-center font-bold text-2xl mt-3">Total</p>
+         <p class="text-center font-bold text-2xl">Students</p>
+         <p class="text-center font-bold text-2xl mt-1">98</p>
+         <i class="fa fa-book text-center flex justify-center font-bold text-2xl hover:animate-ping duration-150" aria-hidden="true"></i>
+      </div>
+      <div class="bg-amber-300 lg:w-44 lg:h-40 md:w-20 md:h-16 rounded-lg hover:scale-105 hover:shadow-xl">
+        <p class="text-center font-bold text-2xl mt-3">Success</p>
+        <p class="text-center font-bold text-2xl">Students</p>
+        <p class="text-center font-bold text-2xl mt-1">82</p>
+        <i class="fa fa-thumbs-up text-center flex justify-center font-bold text-2xl hover:animate-ping duration-150" aria-hidden="true"></i>
+     </div>
+     <div class="bg-red-400 lg:w-44 lg:h-40 md:w-20 md:h-16 rounded-lg hover:scale-105 hover:shadow-xl">
+        <p class="text-center font-bold text-2xl mt-3">Failed</p>
+        <p class="text-center font-bold text-2xl ">Students</p>
+        <p class="text-center font-bold text-2xl mt-1">17</p>
+        <i class="fa fa-thumbs-down flex justify-center font-bold text-2xl hover:animate-ping duration-150" aria-hidden="true"></i>
+
+     </div>
+</div>
+<div>
+    <h1 class="mt-10 flex justify-center self-center font-sans font-bold text-zinc-700 underline text-2xl">Top students</h1>
+</div>
+
+<div class="mt-5 mr-3">
+<div class="relative overflow-x-auto">
+  <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+      <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+          <tr>
+              <th scope="col" class="px-6 py-3">
+                  s.no.
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Student name
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  class
+              </th>
+              <th scope="col" class="px-6 py-3">
+                  Year
+              </th>
+              <th scope="col" class="px-6 py-3">
+                Rank
+            </th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+              <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                  1
+              </th>
+              <td class="px-6 py-4">
+                  xyz
+              </td>
+              <td class="px-6 py-4">
+                  3rd sem
+              </td>
+              <td class="px-6 py-4">
+                  2023
+              </td>
+              <td class="px-6 py-4">
+                1st
+            </td>
+          </tr>
+          <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+            <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                1
+            </th>
+            <td class="px-6 py-4">
+                xyz
+            </td>
+            <td class="px-6 py-4">
+                3rd sem
+            </td>
+            <td class="px-6 py-4">
+                2023
+            </td>
+            <td class="px-6 py-4">
+              1st
+          </td>
+        </tr>
+        <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700">
+          <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+              1
+          </th>
+          <td class="px-6 py-4">
+              xyz
+          </td>
+          <td class="px-6 py-4">
+              3rd sem
+          </td>
+          <td class="px-6 py-4">
+              2023
+          </td>
+          <td class="px-6 py-4">
+            1st
+        </td>
+      </tr>
+         
+          
+      </tbody>
+  </table>
+</div>
+</div>
+</main>
+
+      </body>
+</html>
